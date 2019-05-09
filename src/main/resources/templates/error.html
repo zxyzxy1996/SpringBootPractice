@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>捕获全局异常</title>
+</head>
+<body>
+<div>
+    <h1 style="color: red">发生错误：</h1>
+    <!--/*@thymesVar id="url" type="com.imooc.exception.IMoocExceptionHandler"*/-->
+    <div th:text="${url}"></div>
+    <!--/*@thymesVar id="exception" type="com.imooc.exception.IMoocExceptionHandler"*/-->
+    <div th:text="${exception}"></div>
+</div>
+</body>
+</html>
